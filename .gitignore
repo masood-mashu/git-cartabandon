@@ -1,0 +1,18 @@
+# Byte-compiled / optimized / DLL files
+__pycache__/
+*.py[cod]
+*$py.class
+
+# Node / NPM
+node_modules/
+npm-debug.log*
+
+# GitAgent artifacts
+.gitagent/
+
+# OS / Editor files
+.DS_Store
+Thumbs.db
+*.swp
+.vscode/
+.idea/

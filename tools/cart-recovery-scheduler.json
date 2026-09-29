@@ -1,0 +1,15 @@
+{
+  "$schema": "http://json-schema.org/draft-07/schema#",
+  "title": "schedule_recovery_sequence",
+  "description": "Schedules multi-stage cart recovery notification cadence across email and SMS",
+  "type": "object",
+  "properties": {
+    "cart_id": {
+      "type": "string",
+      "description": "Unique cart identifier string"
+    }
+  },
+  "required": [
+    "cart_id"
+  ]
+}

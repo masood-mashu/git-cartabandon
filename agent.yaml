@@ -1,0 +1,25 @@
+spec_version: "0.1.0"
+name: "git-cartabandon"
+version: "0.1.0"
+description: "Autonomous E-Commerce Cart Abandonment Diagnostic, Margin-Preserving Recovery Agent"
+framework: "opengap"
+authors:
+  - name: "masood-mashu"
+    email: "masoodmashu03@gmail.com"
+license: "Apache-2.0"
+
+runtime:
+  language: "python"
+  version: ">=3.10"
+  timeout: 120
+
+tags:
+  - retail-ecommerce
+  - cart-abandonment
+  - checkout-optimization
+  - conversion-rate
+  - passport-challenge
+
+metadata:
+  passport_id: "aps-cartabandon-01"
+  passport_category: "Retail & e-commerce"

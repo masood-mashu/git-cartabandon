@@ -1,0 +1,28 @@
+{
+  "agent": "git-cartabandon",
+  "passport_id": "aps-cartabandon-01",
+  "category": "Retail & e-commerce",
+  "visas_earned": "15/15",
+  "visa_list": [
+    "system-prompt",
+    "claude-code",
+    "openai",
+    "crewai",
+    "openclaw",
+    "nanobot",
+    "lyzr",
+    "github",
+    "copilot",
+    "opencode",
+    "cursor",
+    "gemini",
+    "codex",
+    "kiro",
+    "gitclaw"
+  ],
+  "checkpoint_status": {
+    "checkpoint_01": "VERIFIED",
+    "checkpoint_02": "VERIFIED_PASS",
+    "checkpoint_03": "READY"
+  }
+}

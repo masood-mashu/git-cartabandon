@@ -1,0 +1,13 @@
+{
+  "format": "kiro",
+  "agent": "git-cartabandon",
+  "title": "GitCartAbandon",
+  "category": "Retail & e-commerce",
+  "version": "0.1.0",
+  "visa_status": "EARNED",
+  "checkpoint_support": [
+    "01",
+    "02",
+    "03"
+  ]
+}
