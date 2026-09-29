@@ -1,14 +1,18 @@
-name: "funnel-dropoff-diagnostic"
+name: funnel-dropoff-diagnostic
+version: 1.0.0
 description: "Identifies exact checkout stage responsible for transaction abandonment"
-version: "0.1.0"
-runtime:
-  language: "python"
-  entrypoint: "funnel_dropoff_diagnostic.py"
-parameters:
-  type: "object"
+input_schema:
+  type: object
   properties:
     checkout_step:
-      type: "string"
+      type: string
       description: "Name of last completed checkout step (shipping, payment, review)"
   required:
-    - "checkout_step"
+    - checkout_step
+implementation:
+  type: script
+  path: funnel_dropoff_diagnostic.py
+  runtime: python3
+annotations:
+  read_only: true
+  idempotent: true

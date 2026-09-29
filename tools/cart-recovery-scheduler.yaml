@@ -1,14 +1,18 @@
-name: "cart-recovery-scheduler"
+name: cart-recovery-scheduler
+version: 1.0.0
 description: "Schedules multi-stage cart recovery notification cadence across email and SMS"
-version: "0.1.0"
-runtime:
-  language: "python"
-  entrypoint: "cart_recovery_scheduler.py"
-parameters:
-  type: "object"
+input_schema:
+  type: object
   properties:
     cart_id:
-      type: "string"
+      type: string
       description: "Unique cart identifier string"
   required:
-    - "cart_id"
+    - cart_id
+implementation:
+  type: script
+  path: cart_recovery_scheduler.py
+  runtime: python3
+annotations:
+  read_only: true
+  idempotent: true

@@ -1,14 +1,18 @@
-name: "exit-intent-discount-engine"
+name: exit-intent-discount-engine
+version: 1.0.0
 description: "Calculates safe promotional discount that maintains minimum required gross margin"
-version: "0.1.0"
-runtime:
-  language: "python"
-  entrypoint: "exit_intent_discount_engine.py"
-parameters:
-  type: "object"
+input_schema:
+  type: object
   properties:
     margin_data_json:
-      type: "string"
+      type: string
       description: "JSON with retail_price_usd, cost_usd, min_margin_pct"
   required:
-    - "margin_data_json"
+    - margin_data_json
+implementation:
+  type: script
+  path: exit_intent_discount_engine.py
+  runtime: python3
+annotations:
+  read_only: true
+  idempotent: true
